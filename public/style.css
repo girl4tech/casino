@@ -1,0 +1,119 @@
+body{
+  background-image: url(roulette.jpg);
+  background-size:cover;
+  color:white;
+  padding-top:80px;
+  text-shadow: .5px .5px black;
+  word-wrap:break-word;
+
+}
+button{
+  background: #26C281;
+  border: 0;
+  border-radius: 5px;
+  box-shadow:none;
+  color:white;
+  height: 40px;
+  width: 35%;
+
+}
+input{
+  height:40px;
+}
+img{
+  height: 200px;
+}
+
+form, #formHead{
+  text-align: center;
+}
+
+.btn-lg{
+  background: red;
+  border:white;
+}
+.complete{
+    color: green;
+
+}
+.jumbotron, .text-center, .col-sm-offset-3{
+  background:rgba(204, 204, 204, 0.5);
+  height: 500px;
+}
+.messages{
+  color: white;
+    background: rgba(0, 0, 0, 0.6);
+  box-shadow: 3px 3px gray;
+  height: 260px;
+  list-style: none;
+}
+.redirectLink{
+  color:red;
+  font-weight: bold;
+}
+
+.welcome{
+  background: #6A3600;
+  border: 1px solid white;
+  border-radius: 5px;
+  color:white;
+
+}
+
+#makeBlack{
+  color:black;
+}
+#makeGreen{
+  color: black;
+}
+#qTitle{
+  background: #446CB3;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-top: -2px;
+}
+#welcome{
+  background: blue;
+
+}
+
+#area{
+    margin-left: 10%;
+    margin-top: 10px;
+    width: 80%;
+
+}
+
+#messsageList{
+  background: blue;
+  height:150px;
+  margin-left: 20%;
+  margin-top:20px;
+  width: 50%;
+}
+
+#buttonPad{
+  background: rgba(0, 0, 0, 0.6);
+  float: left;
+  height: 375px;
+  width: 20%;
+}
+
+#payMsg{
+  background: black;
+  color: green;
+  padding-bottom: 30px;
+}
+#machine{
+  float: left;
+  width:80%;
+}
+
+#submitOnProfile{
+  background-color: blue;
+  width: 20%;
+}
+#title{
+  color: black;
+  margin-top: -30px;
+}

@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Roulette</title>
+  <link rel="stylesheet" href="font-awesome.min.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron text-center">
+          <h1 id="title">Wants some money? Lets play Roulette!</h1>
+      <div id="machine">
+
+        <div class="col-sm-6">
+          <ul class="messages">
+            <% for(var i=0; i<messages.length; i++) {%>
+              <li class="message">
+                <span><%= messages[i].snack %></span>
+                <!-- <span><%= messages[i].count %></span> -->
+                <span id="makeGreen"><%= messages[i].thumbUp %></span>
+              </li>
+              <% } %>
+          </ul>
+        </div>
+      </div>
+
+      <div id=buttonPad>
+        <h2>Enter a bet and then spin the wheel</h2>
+        <form class="" action="index.html" method="post">
+          <input type="text" name="amount" id="amount" placeholder="Enter Amount">
+          <label for="one">1</label>
+          <input type="radio" name="option" id="one" value="one">
+          <label for="two">2</label>
+          <input type="radio" name="option" id="two" value="2">
+          <label for="three">3</label>
+          <input type="radio" name="option" id="three" value="3">
+          <label for="four">4</label>
+          <input type="radio" name="option" id="four" value="4">
+          <label for="five">5</label>
+          <input type="radio" name="option" id="five" value="5">
+          <label for="six">6</label>
+          <input type="radio" name="option" id="six" value="6">
+          <label for="red">Red</label>
+          <input type="radio" name="" id="red" value="red">
+          <label for="black">Black</label>
+          <input type="radio" name="" id="black" value="black">
+      </section>
+      <button type="button" id="spin" name="button">Spin!</button>
+      </form>
+      </div>
+      <h2 id="winLose"></h2>
+      <h2 id="total"></h2>
+
+
+
+
+      <p>Login or Signup:</p>
+
+      <a href="/login" class="btn btn-default"><span class="fa fa-user"></span>Login</a>
+      <a href="/signup" class="btn btn-default"><span class="fa fa-user"></span>Signup</a>
+      <p id="counter">How much $ did we fundraise?</p>
+
+
+
+
+
+
+      <script src="main.js"></script>
+
+</body>
+
+</html>

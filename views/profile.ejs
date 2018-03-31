@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+    <title>Vending Machine</title>
+    <link rel="stylesheet" href="font-awesome.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+
+    <div class="page-header text-center">
+        <h1><span class="fa fa-anchor"></span> Welcome to Derek's Vending</h1>
+        <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+
+            <div class="row">
+
+                <!-- LOCAL INFORMATION -->
+                <div  id="area">
+                    <div class="welcome" id="welcome">
+                        <h3><span class="fa fa-user"></span> Welcome Admin! <%= user.local.email %>!</h3>
+
+                        <% if (user.local.email) { %>
+
+                            <p>Money Made: WE DONT DO THIS FOR MONEY</p>
+
+                            <a href="/unlink/local" class="btn btn-default">Unlink</a>
+                        <% } else { %>
+                            <a href="/connect/local" class="btn btn-default">Connect Local</a>
+                        <% } %>
+
+                    </div>
+
+                <div class="col-sm-6">
+
+                  <ul id="messsageList"class="messages">
+                  <% for(var i=0; i<messages.length; i++) {%>
+                    <li class="message">
+                      <span><%= messages[i].snack %></span>
+                      <!-- <span><%= messages[i].count %></span> -->
+                      <span id="makeGreen"><%= messages[i].thumbUp %></span>
+                      <span><i class="fa fa-thumbs-up" aria-hidden="true"></i></span>
+                      <span><i class="fa fa-trash" aria-hidden="true"></i></span>
+                    </li>
+                  <% } %>
+                  </ul>
+                </div>
+
+                  <h2 id=formHead>Add a new item</h2>
+                  <% if (user.local.email) { %>
+                  <form action="/messages" method="POST">
+                    <input type="text" placeholder="snack" name="snack" list="vendingList">
+                      <datalist id="vendingList">
+                        <option value="Wins">
+                        <option value="Losses">
+                      </datalist>
+
+                    <button id="submitOnProfile" type="submit">Submit</button>
+                  </form>
+                  </div>
+                  <% } %>
+
+    </div>
+
+<script src="main.js"></script>
+
+</body>
+</html>
