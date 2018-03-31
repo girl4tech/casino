@@ -1,3 +1,6 @@
-# Coffee-Barista-login
-# vending-machine
-# Vending Machine
+# Roulette
+
+# Tech Used
+HTML CSS JS MONGO NODE EXPRESS PASSPORT
+
+# Optimizations
